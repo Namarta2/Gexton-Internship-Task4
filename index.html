@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="landing-page-container"> 
+        <header class="navbar">
+          <div class="logo-area">
+    <div class="logo-placeholder">GF</div>
+    <span class="brand-name">GRAPHICSFAMILY</span>
+</div>
+            <nav class="nav-links">
+                <a href="#" title="Home"><i class="fas fa-home"></i></a>
+                <a href="#" title="Services"><i class="fas fa-concierge-bell"></i></a>
+                <a href="#" title="About"><i class="fas fa-info-circle"></i></a>
+                <a href="#" title="Contact"><i class="fas fa-envelope"></i></a>
+                <a href="#" title="FAQ"><i class="fas fa-question-circle"></i></a>
+                <a href="#" title="Search" class="search-icon"><i class="fas fa-search"></i></a>
+            </nav>
+        </header>
+
+        <main class="hero-section">
+            
+            <section class="left-column">
+                <h1 class="main-heading">Subscribe Now <br><span class="blue-text">to Our Newsletter</span></h1>
+                <p class="description-text">
+                   Stay updated with our latest tutorials, design resources, and technology news by subscribing to our newsletter.
+                </p>
+                 
+                <form id="subscriptionForm" class="subscription-form">
+                    <input type="text" id="userName" placeholder="Name" class="form-input">
+                    <input type="email" id="userEmail" placeholder="Email" class="form-input">
+                    
+                    <button type="submit" class="cta-button">
+                        Send <i class="fas fa-arrow-right button-icon"></i>
+                    </button>
+                </form>
+
+                <footer class="form-footer">
+                    <a href="https://www.graphicsfamily.com" target="_blank">www.graphicsfamily.com</a>
+                </footer>
+            </section>
+
+            <section class="right-column">
+       <div class="blob-wrapper">
+
+    <svg class="blob-svg" viewBox="0 0 600 600">
+
+        <defs>
+            <clipPath id="blobClip">
+                <path d=" M205,95
+                C330,40 500,80 555,210
+                C600,320 565,470 450,535
+                C335,600 170,565 95,460
+                C45,390 40,270 95,215
+                C140,170 170,145 205,95
+                Z"/>
+            </clipPath>
+        </defs>
+        <image id="carouselImage" href="img1.jpg" width="600" height="600" preserveAspectRatio="xMidYMid slice" clip-path="url(#blobClip)"/>
+
+    </svg>
+
+    <!-- Solid Blue Curve -->
+    <svg class="curve curve1" viewBox="0 0 600 600">
+        <path d="
+        M205,95
+        C330,40 500,80 555,210
+        C600,320 565,470 450,535
+        C335,600 170,565 95,460
+        C45,390 40,270 95,215
+        C140,170 170,145 205,95
+        Z"/>
+    </svg>
+
+    <!-- Dashed Curve -->
+    <svg class="curve curve2" viewBox="0 0 600 600">
+        <path d="
+        M205,95
+        C330,40 500,80 555,210
+        C600,320 565,470 450,535
+        C335,600 170,565 95,460
+        C45,390 40,270 95,215
+        C140,170 170,145 205,95
+        Z"/>
+    </svg>
+
+</div>      
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="changeImage(0)"></span>
+                        <span class="dot" onclick="changeImage(1)"></span>
+                        <span class="dot" onclick="changeImage(2)"></span>
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
