@@ -15,6 +15,7 @@ subscriptionForm.addEventListener("submit", function(event) {
 if(nameValue === "" || emailValue === ""){
     
     alert("Please fill in all fields before submitting.");
+    return;
 
 }
 else if(!emailPattern.test(emailValue)){
